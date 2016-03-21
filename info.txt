@@ -1,0 +1,16 @@
+памятка
+
+cd /WORK/itmo/www/
+npm -v
+npm install gulp -D
+npm install gulp -gulp
+npm install -g browser-sync
+npm install  browser-sync -D 
+
+
+
+полезное:
+Visual Studio Code - кроссплатформенный редактор кода - https://habrahabr.ru/company/microsoft/blog/262523/
+emmet - зачетный помогатель - http://docs.emmet.io/cheat-sheet/
+jedi - упрощенный синтаксис. (не пашет с emmet) 
+
