@@ -18,5 +18,9 @@ jedi - упрощенный синтаксис. (не пашет с emmet)
 CSS
 .vertial-menu лучшем чем li.vertical-menu
  
+ 
+ less sass stylus - препрцессоры css
+ 
+ 
 
 

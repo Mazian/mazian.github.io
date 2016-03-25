@@ -4,6 +4,7 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+/*меню*/
 .menu {
     background: tomato;   
     list-style: none;
@@ -18,11 +19,28 @@ body {
 }
 
 .menu a {
-    color: #FFF; 
+    color: #FFF;
     display: block;
     font-weight: bold;
     padding: 1em;
     text-decoration: none;
 }
 
+.menu a:hover {
+    background: red;
+    color: #FFF; 
+}
+
+
+textarea {
+    width:50%;
+    height:5em;
+}
+
+/*подвал*/
+footer {
+    border-top: 1px solid #EEE;
+    color:gray;
+    margin-top:20px;
+}
 
