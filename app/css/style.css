@@ -1,46 +1,110 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+@import url("grid.css");
 
-body {
-    font-family: "Open Sans", sans-serif;
+.form-row {
+    margin-bottom:20px;
 }
 
-/*меню*/
-.menu {
-    background: tomato;   
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-.menu li {
-    color: #FFF; 
-    display: inline-block;
-    /*margin: 1em 0;*/
-}
-
-.menu a {
-    color: #FFF;
+.form-row label {
     display: block;
     font-weight: bold;
-    padding: 1em;
-    text-decoration: none;
+    margin-bottom: 5px;
 }
 
+.form-row .form-input input,
+.form-row .form-input textarea
+{
+    border: 1px solid #999;
+    padding: 5px;
+    width: 100%;
+}
+
+.form-row .form-button-group {
+    
+}
+
+/*менюшечка*/
+nav {
+    display: inline-block;
+    background:tomato;
+    width:100%;
+}
+.menu {
+    background:tomato;
+    /*overflow: hidden;*/
+}
+.menu,
+.menu ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.menu > li {
+    float:left;
+    position: relative;
+    background:#ccc;
+    width:auto;
+}
+.menu a {
+    display: block;
+    background: tomato;
+    padding:10px;
+    text-decoration:none;
+    color: #fff;
+}
 .menu a:hover {
-    background: red;
-    color: #FFF; 
+    background-color: red;
+}
+
+.menu li ul {
+    display:none; 
+    position: absolute;
+    z-index:999;
+    width:120px;
+}
+.menu li:hover ul {
+    display:block;    
 }
 
 
-textarea {
-    width:50%;
-    height:5em;
+
+/*оверлей*/
+.overlay {
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:9999;
+    text-align:center;
+    display:none;
 }
 
-/*подвал*/
-footer {
-    border-top: 1px solid #EEE;
-    color:gray;
-    margin-top:20px;
+.modal-window {
+    background: #fff;
+    color:#333;
+    width:60%;
+    /*margin:0 auto;*/
+    padding:2%;
+    display: inline-block;
+    vertical-align:middle;
+    text-align:left;
 }
 
+.va-helper {
+    display: inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+
+.window-state {
+    display: none;
+}
+
+.window-state:checked + .overlay {
+    display: block;
+}
+.link {
+    cursor: pointer;
+}

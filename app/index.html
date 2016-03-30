@@ -1,45 +1,98 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>Дизайн-дружина "Светлый стан"</title>
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-    <h1>Сайт дизайн-дружины "Светлый стан"</h1>
-    </header>
-    
-    <nav>
-    <ul class="menu">
-        <li><a !href="index.html">Титульная</a></li>
-        <li><a href="portfolio.html">Портфолио</a></li>
-        <li><a href="services.html">Услуги</a></li>
-    </ul>
-    </nav>
+	<div class="wrapper">
+        <div class="row">
+            <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Титульная</a>
+                </li>
+                <li>    
+                    <a href="#">Уроки</a>
+                    <ul>
+                        <li>
+                            <a href="#">Фронт</a>
+                        </li>
+                        <li>
+                            <a href="#">Бэк</a>
+                        </li>
+                        <li>
+                            <a href="#">Веб дизинг</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                    <ul>
+                        <li>
+                            <a href="#">Кто</a>
+                        </li>
+                        <li>
+                            <a href="#">Где</a>
+                        </li>
+                        <li>
+                            <a href="#">Когда</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        
+		<div class="row">
+			<div class="col-12">
 
-    <!-- content begin -->    
-    <article>
+                <label class="link" for="window-callback-state">Click me!</label>
 
-        <h2>Новости компании</h2>
+			</div>
+		</div>
+	</div>
 
-        <h3>20 марта 2016 г.</h3>
-        <p>Закончили отмечать открытие сайта дружины... Начинаем принимать заказы.</p>
+    <input id="window-callback-state" class="window-state" type="checkbox">
+    <div class="overlay">
+        <div class="modal-window">
+            <label class="link" for="window-callback-state">[x]</label>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui in aliquid dicta commodi nobis optio, illo, dolorum iste nihil sunt amet, eum nulla. Tempore quibusdam, optio magnam illo voluptates eum.</p>
+   				<form method="post">
 
-        <h3>18 декабря 2015 г.</h3>
-        <p>Открыли сайт дизайн-дружины! Решили отметить это дело!</p>    
+					<div class="row form-row">
+						<label class="col-4" for="username">Имя пользователя, которое даётся по праву рождения и более не меняется никогда</label>
+						<div class="col-8 form-input">
+							<input id="username" type="text">
+						</div>
+					</div>
 
-        <figure>
-            <img src="img/gulp.svg" alt="Потоковый сборщик" width="200"></p>    
-            <figcaption>Стакан Gulp, 5-летняя выдержка</figcaption>
-        </figure>
+					<div class="row form-row">
+						<label class="col-4" for="password">Пароль</label>
+						<div class="col-8 form-input">
+							<input id="password" type="password">
+						</div>
+					</div>
 
-    </article>    
-    <!-- content end -->    
+					<div class="row form-row">
+						<label class="col-8 offset-4">
+							<input type="checkbox">
+							Запомнить
+						</label>
+					</div>
 
-    <footer>
-        (c) д/д "Светный стан", 2016
-    </footer>
+					<div class="row form-row">
+						<div class="col-8 offset-4 form-button-group">
+                            <input type="submit" value="Вход">
+					    </div>
+                    </div>
+				</form>
+        </div>
+        <div class="va-helper"></div>
+
+    </div>
+
 </body>
 </html>
