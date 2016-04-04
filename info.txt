@@ -22,5 +22,18 @@ CSS
  less sass stylus - препрцессоры css
  
  
+ советы: % юзать для - сетки, img, video, margin и padding для лестниц вложенностей
+ 
+http://bower.io/ - исчо одна весь - пакетный манагер для веба
+npm install bower - установка
+bower init
+bower install normalize.css
+bower install Font-Awesome   / http://fontawesome.io - шрифт иконочный
+
+reset.css
+
+http://flatuicolors.com/ - палитры
+
+
 
 

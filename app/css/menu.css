@@ -1,0 +1,18 @@
+
+.menu {
+    
+}
+.menu li {
+    float:left;
+    font-width:bold;
+}
+.menu a {
+    color:#ecf0f1;
+    display: block;
+    padding: 0 2rem;
+    text-decoration: none;
+    line-height:6rem;
+}
+.menu a:hover {
+    background-color: #2980b9;
+}

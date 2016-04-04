@@ -1,110 +1,113 @@
-@import url("grid.css");
+@import url(//fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+@import url(grid.css);
+@import url(menu.css);
 
-.form-row {
-    margin-bottom:20px;
+html {
+    font-size: 10px;
 }
 
-
-.form-row label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+body {
+    font-size:1.6rem;
+    font-family: "Open Sans", sans-serif;
 }
+/*.wrapper {
+    max-width: 96rem;
+    margin:0 auto;
+}*/
 
-.form-row .form-input input,
-.form-row .form-input textarea
-{
-    border: 1px solid #999;
-    padding: 5px;
-    width: 100%;
-}
-
-.form-row .form-button-group {
-    
-}
-
-/*менюшечка*/
-nav {
-    display: inline-block;
-    background:tomato;
+img {
     width:100%;
+    height:auto;
 }
-.menu {
-    background:tomato;
-    /*overflow: hidden;*/
+h1,h2,h3,h4,h5,h6 {
+    margin:2rem;
 }
-.menu,
-.menu ul {
-    margin:0;
-    padding:0;
-    list-style: none;
+p {
+    margin:1rem auto;
+    line-height: 2.5rem;
+    max-width:900px;
 }
-.menu > li {
+h2 {
+    font-size:3rem;
+}
+
+header {
+    background: #3498db;                                                
+    height:6rem;
+}
+
+.search {
+    margin: auto;
+}
+
+.search {
+    margin-top:1.4rem;
+}
+.search input {
+    border: 0.1rem solid #ecf0f1;
     float:left;
-    position: relative;
-    background:#ccc;
-    width:auto;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    height: 3rem;
+    width: calc(100% - 4rem); 
 }
-.menu a {
-    display: block;
-    background: tomato;
-    padding:10px;
-    text-decoration:none;
+.search button {
+    border:0;
+    float:left;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    height: 3rem; 
+    width: 4rem;
+}
+
+.slider {
+    background: url(http://lorempixel.com/640/480/cats) center no-repeat;
+    background-size: cover;
+    height:40vh;
+}
+.slider-wrapper {
+    margin:2rem 0;
+}
+
+.pano {
+    height:20vh;
+    font-size: 4rem;
+    line-height: 20vh;
+    font-weight: bold;
+    text-align: center;
     color: #fff;
 }
-.menu a:hover {
-    background-color: red;
+.yellow {
+    background: #f39c12;
+}
+.blue {
+    background: #2980b9;
 }
 
-.menu li ul {
-    display:none; 
-    position: absolute;
-    z-index:999;
-    width:120px;
-}
-.menu li:hover ul {
-    display:block;    
-}
-
-
-
-/*оверлей*/
-.overlay {
-    background: rgba(0,0,0,0.6);
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
+.four-div {
+    border:0.1rem solid lightgray;
     height:100%;
-    z-index:9999;
+    margin:1%;
+    padding:1%;
     text-align:center;
-    display:none;
+}
+.four-div .four-titl {
+    font-size:2rem;
+}
+.four-div .fa {
+    font-size:4rem;
+    padding:0.5rem;
 }
 
-.modal-window {
-    background: #fff;
-    color:#333;
-    width:60%;
-    /*margin:0 auto;*/
-    padding:2%;
-    display: inline-block;
-    vertical-align:middle;
-    text-align:left;
-}
 
-.va-helper {
-    display: inline-block;
-    height:100%;
-    vertical-align:middle;
-}
 
-.window-state {
-    display: none;
-}
 
-.window-state:checked + .overlay {
-    display: block;
-}
-.link {
-    cursor: pointer;
+
+/*подвал*/
+footer {
+    padding-top:10px;
+    border-top: 1px solid #EEE;
+    color:gray;
+    margin-top:20px;
+    clear: both;
 }

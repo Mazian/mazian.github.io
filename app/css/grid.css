@@ -1,9 +1,14 @@
+
 * {
     box-sizing: border-box;
-    -overflow: hidden; 
+    /*overflow: hidden; */
 }
 
 .row {
+    padding:0 1rem;
+}
+.row .row {
+    margin:0 -1rem;
 }
 
 .row:after {
@@ -15,9 +20,12 @@
 }
 
 [class*="col-"] {
+    box-sizing: border-box;
     float: left;
-    padding: 0 10px;
+    padding: 0 1rem;
     -border: 1px solid;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .col-1 { width: 8.3333333333%; }
@@ -45,4 +53,11 @@
 .offset-10 { margin-left: 83.3333333333% }
 .offset-11 { margin-left: 91.6666666667% }
 .offset-12 { margin-left: 100%;}
+
+@media only screen and (max-width:480px) {
+    [class*="col-"] {
+        width:100%;
+    }
+    
+}
 
