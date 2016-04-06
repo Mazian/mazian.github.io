@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Бриф / Дизайн-дружина "Светлый стан"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+    <h1>Сайт дизайн-дружины "Светлый стан"</h1>
+    </header>
+    
+    <nav>
+    <ul class="menu">
+        <li><a href="index.html">Титульная</a></li>
+        <li><a href="portfolio.html">Портфолио</a></li>
+        <li><a href="services.html">Услуги</a></li>
+    </ul>
+    </nav>
+
+    <!-- content begin -->    
+
+        <h2>Бриф на выполнение заказа</h2>
+        <p>Чем подробнее заполните бриф - тем больше счастья получите.</p>   
+
+        <form method="POST" action="" enctype="multipart/form-data">
+        <fieldset>	
+            <dl>
+                <label>
+                    <dt>Скажите кто вы? <sup>*</sup></dt>
+                    <dd><input type="text" name="fio" placeholder="Иванов Иван Иванович" title="Введите полные фамилию и имя" required></dd>        
+                </label>
+
+                <label>
+                    <dt>Как вы сюда попали? <sup>*</sup></dt>
+                    <dd><input type="text" name="from"  placeholder="login@domain.com" title="Напишите как вы нас нашли или кто вас прислал" required></dd>        
+                </label>
+
+                <label>
+                    <dt>Выберите тему обращения: <sup>*</sup></dt>
+                    <dd>    
+                        <select name="feedback_subj">
+                        <option value="" style="color:#aaa">[ выберите нужное ]</option>
+                        <optgroup label="Заказать сайт">
+                            <option value="3">Простой сайт</option>
+                            <option value="4">Сложный сайт</option>
+                            <option value="5">Другое</option>
+                        </optgroup>
+                        <optgroup label="Просто поболтать">
+                            <option value="11">Без пива</option>
+                            <option value="12">С пивом</option>
+                        </optgroup>
+                        </select>
+                    </dd>
+                </label>
+
+                <label>
+                    <dt>Сообщение</dt>
+                    <dd><textarea class="msg" name="feedback_message"></textarea></dd>
+                </label>
+
+                <div>
+                    <input type="reset">
+                    <input type="submit">
+                </div>            
+
+            </dl>
+
+
+        </fieldset>
+        </form>
+
+
+    
+    <!-- content end -->    
+
+    <footer>
+        (c) д/д "Светный стан", 2016
+    </footer>
+</body>
+</html>

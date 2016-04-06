@@ -1,0 +1,67 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+@import url('grid.css');
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/*меню*/
+.menu {
+    background: tomato;   
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    color: #FFF; 
+    display: inline-block;
+    /*margin: 1em 0;*/
+}
+
+.menu a {
+    color: #FFF;
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: red;
+    color: #FFF; 
+}
+
+article P {
+    padding:1em 3em;
+}
+
+article p img {
+    width:0;
+}
+
+textarea {
+    width:50%;
+    height:5em;
+}
+
+.redbox {
+    -border:1px solid tomato;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #FFF, tomato);
+    font-size:1.6em;
+    padding:10px;
+    text-align: center;
+    width:90%;
+}
+
+
+/*подвал*/
+footer {
+    padding-top:10px;
+    border-top: 1px solid #EEE;
+    color:gray;
+    margin-top:20px;
+    clear: both;
+}
+

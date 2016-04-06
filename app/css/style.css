@@ -33,11 +33,12 @@ h2 {
 
 header {
     background: #3498db;                                                
-    height:6rem;
+    -height:6rem;
 }
 
 .search {
     margin: auto;
+    height:4rem;
 }
 
 .search {
