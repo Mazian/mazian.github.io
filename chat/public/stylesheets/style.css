@@ -1,0 +1,17 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#adr_selector {
+    width:200px;
+}
+
+#message_text {
+    width:50%;
+    height:8em;
+}

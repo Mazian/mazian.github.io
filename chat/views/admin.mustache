@@ -1,0 +1,66 @@
+﻿{{>header}}
+
+    <!-- h1>Мини-чатик</h1 -->
+    <div id="contener">
+
+
+{{#auth}}
+
+
+    {{login}}, поздравляю вы авторизировались!<br>
+    можете выйти <button><a href='/admin/exit'>выйти</a></button>  
+
+    <div id="messages">
+        {{#messages}}
+        <div class="message {{fromme}}">
+            {{login}}: {{message_text}}
+        </div>
+        {{/messages}}
+    </div>
+
+    <hr>
+
+    
+    <div>
+        to: <select class="form-control" name="touser" id="adr_selector">
+              {{#lusers}}
+              <option value={{id_user}}>{{login}}</option>           
+              {{/lusers}}
+            </select>
+    </div>
+   
+    <div>
+        <textarea class="form-control" name="message_text" id="message_text"></textarea>
+        <button type="submit" class="btn btn-default" id="submitMess">Submit</button>
+    </div>
+   
+   
+    
+   
+<script>
+$('#submitMess').on('click', function(){
+    var mess = $('#message_text').val();
+    SendMessage(mess);
+    $('#message_text').val('');
+    return false;
+});
+</script>
+
+
+
+{{/auth}}
+{{^auth}}
+
+        <h3>Зона повышенной админности!</h3>
+        <form method="post" action="/admin/">
+            Login: <input name="login"><br />
+            Password: <input name="pass" type="password"><br />
+        <input type="submit">
+        </form>
+
+{{/auth}}
+
+
+    </div>
+
+{{>footer}}
